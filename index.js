@@ -16,7 +16,7 @@ app.use('/public', express.static('public'));
 
 app.get("/", (req, res) => {
     console.log(`Принят запрос для события`);
-    const filePath = 'public/xml/event.gif';
+    const filePath = 'public/event.gif';
     res.sendFile(filePath, { root: __dirname });
 });
 
